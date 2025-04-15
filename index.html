@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App in js</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
         <h2 class="config-title">Quiz Configuration</h2>
         <div class="config-option">
             <h4 class="option-title">Select Category</h4>
-            <div class="category-option">
+            <div class="category-options">
                 <button class="category-option">Programming</button>
                 <button class="category-option">Geography</button>
                 <button class="category-option">Mathematics</button>
@@ -28,7 +29,37 @@
                 <button class="question-option">25</button>
             </div>
         </div>
+        <div class></div>
         <button class="start-quiz-btn">Start</button>
     </div>
+
+
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h2 class="quiz-title">Quiz Application</h2>
+            <div class="quiz-timer">
+                <span class="material-symbols-rounded">timer</span>
+                <p class="time-duration">15s</p>
+            </div>
+        </header>
+        <div class="quiz-content">
+            <h1 class="question-text"></h1>
+            <ul class="answer-options"></ul>
+        </div>
+        <div class="quiz-footer">
+            <p class="question-status"><b>2</b> of <b>10</b> Questions</p>
+            <button class="next-question-btn">Next
+            </button>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <img src="celebration.png" alt="" class="result.img" width="250px">
+        <h2 class="result-title">Quiz Completed</h2>
+        <p class="result-message">You answered <b>3</b> out of <b>5</b> questions correctly. Great effort!</p>
+        <button class="try-again-btn">Try Again</button>
+    </div>
 </body>
-</html>
+<script src="javascript/question.js"></script>
+<script src="javascript/script.js"></script>
+</html> 
